@@ -4,7 +4,7 @@ Redirect Mobile Devices
 
 
 1. 
-```javascript
+
 <script type="text/javascript">
   <!--
   if (screen.width <= 699) {
@@ -12,14 +12,14 @@ Redirect Mobile Devices
   }
   //-->
 </script>
-```
+
 
 "mobile.html" would be replaced with the location of wherever your mobile version resides. 
 This technique could be adapted to load an alternate stylesheet as well.
 
 2. For iPhones/iPods Specifically
 
-```javascript
+
 <script language=javascript>
   <!--
   if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
@@ -27,5 +27,3 @@ This technique could be adapted to load an alternate stylesheet as well.
   }
   -->
 </script>
-
-```
