@@ -4,8 +4,7 @@ Redirect Mobile Devices
 
 
 1. 
-``` javascript
-
+```javascript
 <script type="text/javascript">
   <!--
   if (screen.width <= 699) {
@@ -20,7 +19,7 @@ This technique could be adapted to load an alternate stylesheet as well.
 
 2. For iPhones/iPods Specifically
 
-``` javascript
+```javascript
 <script language=javascript>
   <!--
   if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
