@@ -62,6 +62,17 @@ It is the name of the item in the sessionStorage (or cookie name) used to avoid 
 - `append_referrer_key` : if specified, the key used for the document.referrer.  defaults to 'original_referrer'
 
 ## Examples
+If you want to redirect the user to your mobile version:
+```javascript
+        SA.redirection_mobile({
+            keep_path : true,
+            keep_query : true,
+            tablet_redirection : "true",
+            mobile_url: "mobile.domain.com",
+            tablet_host: "tablet.domain.com" // if you don't specify the tablet_host, it will use the mobile_url
+        });
+```
+
 
 If you want to redirect the user to "http://mobile.domain.com" from "http://domain.com":
 
@@ -78,7 +89,7 @@ If you want to redirect the user to "https://whatever.com/example":
 ```javascript
 	SA.redirection_mobile ({
 		mobile_url : "whatever.com/example",
-		mobile_prefix : "https"
+		mobile_protocol : "https"
 	});
 ```
 
@@ -88,7 +99,7 @@ If you want to redirect the user to "https://whatever.com/example" even when usi
 	SA.redirection_mobile ({
 		tablet_redirection : "true",
 		mobile_url : "whatever.com/example",
-		mobile_prefix : "https"
+		mobile_protocol : "https"
 	});
 ```
 
